@@ -50,7 +50,7 @@ const registerUser = asyncHandler(async (req, res) => {
   });
 
   if (existsUser) {
-    throw new ApiError(409, "User with email or username already exists");
+    throw new ApiError(409, "User with email or phone already exists");
   }
 
   // //files handling
@@ -251,9 +251,9 @@ const getCurrentUser = asyncHandler(async (req, res) => {
 });
 
 const updateAccountDetails = asyncHandler(async (req, res) => {
-  const { fullName, email } = req.body;
+  const { fullName, email} = req.body;
 
-  if (!fullName || !email) {
+  if (!fullName || !email ) {
     throw new ApiError(400, "All fields are required");
   }
 
