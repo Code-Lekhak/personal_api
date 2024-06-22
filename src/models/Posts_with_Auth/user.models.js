@@ -49,7 +49,7 @@ const userSchema = new mongoose.Schema(
   },
     designation: {
       type: String,
-      default: "User",
+      default: "user",
     },
     refreshToken: {
       type: String,

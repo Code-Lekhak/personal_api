@@ -13,7 +13,7 @@ const ApiResponse = require("../utils/ApiResponse");
 //@access private
 const AllGetPosts = asyncHandler(async (req, res) => {
     const posts = await Post.find({user_id: req.user._id});
-    res.status(200).json({message:"All posts you made are here", posts});
+    res.status(200).json({message:"All posts you made are here", Total_Posts:posts.length, posts});
 })
 
 
