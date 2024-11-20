@@ -5,7 +5,7 @@ const app = require("./app");
 dotenv.config();
 // make express app
 
-//connect to database
+//connect to databasess
 connectDB()
   .then(() => {
     app.listen(process.env.PORT || 8080, () => {
