@@ -22,6 +22,7 @@ app.use(cookieParser());
 app.use("/api/v1/users", require("./routes/user.routes"));
 app.use('/api/v1/post', require('./routes/post.routes'));
 app.use('/api/v1/category', require('./routes/category.routes'));
+app.use("/api/v1/tutorial", require("./routes/tutorial.routes"));
 //http://localhost:8080/api/v1/users
 
 
