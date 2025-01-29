@@ -3,7 +3,7 @@ const connectDB = require("./config/indexDB");
 const app = require("./app");
 
 dotenv.config();
-// make express app
+// make express app // Mujhe nhi pata
 
 //connect to databasess
 connectDB()
